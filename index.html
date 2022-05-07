@@ -28,7 +28,7 @@
       <div class="content">
         <h3>欢迎访问小丝丝</h3>
         <div class="info">
-            <div class="time"><span id="time">5</span>秒后跳转</div>
+            <div class="time"><span id="time">3</span>秒后跳转</div>
             <div class="one">
                 <strong>当前可用网址</strong>
                 <p style="color:red"><a style="color:red" href="https://xiaosis.com">https://xiaosis.com</a> 永久地址</p>
@@ -55,9 +55,9 @@
         var time = document.getElementById("time");
         function show() {
             second--;
-            // if(second==0){
-            //     location.href="https://xiaosisi.cc/";
-            // }
+            if(second==0){
+                location.href="https://xiaosisi.cc/";
+            }
             time.innerHTML=second+"";
 
         }
