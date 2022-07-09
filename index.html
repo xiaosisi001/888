@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>小丝丝 - 最新地址</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="小丝丝福利导航">
-    <style>
-        * {box-sizing:border-box;font-family:"微软雅黑";letter-spacing:2px;}
-        html,body{padding:0;margin:0}
-        .content {text-align:center}
+    <header>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>小丝丝 - 最新地址</title>
+        <meta name="renderer" content="webkit"/>
+        <meta name="force-rendering" content="webkit"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="keywords" content="小丝丝,最新地址">
+        <meta name="description" content="小丝丝 最新地址">
+        <meta name="referrer" content="always">
+        <style>
+            body{margin:0 auto;width:300px;text-align:center;}
+            a.link {text-decoration: none;color:rgb(23, 64, 247);border:1px solid black;border-radius:3px;height:35px;line-height:35px;width:250px;display: inline-block;}
+            a.link:hover {color:red;text-decoration:none;}
+            #time {color:red;font-size:16px;font-weight:bold}
+            .tiao{margin-top:10px;font-size:14px;display: inline-block;}
+        </style>
+    </header>
+    <body>
+        <h2>小丝丝 最新地址</h2>
+        <p>请收藏本页到书签</p>
+        <a class="link" href="https://xiaosisi.cc">https://xiaosisi.cc</a>
 
-        a,a:link {text-decoration: none;border:2px dashed red;color:red;height:35px;line-height:35px;display: inline-block;padding:0 10px;margin:5px 0}
-        a:hover {border:2px dashed blue;color:blue;}
-        
-    @media screen and (max-device-width:480px){
-        body {padding:0 1%;}
-        .content {width:100%;}
-    }
-    </style>
-  </head>
-
-  <body>
-      <div class="content">
-        <h1>小丝丝-最新地址</h1>
-        请收藏此页面到浏览器书签<br><br>
-        当前唯一地址：<br>
-        <a href="https://xiaosisi.cc">https://xiaosisi.cc</a><br><br>
-      </div>
-
-
-      <div style="display:none;">
-          <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-          <script>LA.init({id: "JesxUX4Q27HRt3RW",ck: "JesxUX4Q27HRt3RW"})</script>
-      </div>
+        <div class="tiao"><span id="time">5</span>秒后自动跳转</div>
+    
+        <script>
+            var second=5;
+            var time = document.getElementById("time");
+            function show() {
+                second--;
+                if(second==1){
+                    location.href="https://xiaosisi.cc?0709";
+                }
+                time.innerHTML=second+"";
+            }
+            setInterval(show,1000);
+        </script>
+        <div style="display:none;">
+            <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+            <script>LA.init({id: "JesxUX4Q27HRt3RW",ck: "JesxUX4Q27HRt3RW"})</script>
+        </div>
+    </body>
 </html>
